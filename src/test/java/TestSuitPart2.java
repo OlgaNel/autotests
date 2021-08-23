@@ -9,10 +9,6 @@ import org.testng.annotations.Test;
 
 public class TestSuitPart2 {
     WebDriver driver;
-    final String LOGIN_FIELD = "standard_user";
-    final String PASSWORD_FIELD = "secret_sauce";
-    final String expectedLink = "https://www.saucedemo.com/inventory.html";
-    final String expectedLinkLogin = "https://www.saucedemo.com/";
 
     private final String baseUrl = "https://www.ikea.com/ua/uk/";
 
@@ -26,6 +22,7 @@ public class TestSuitPart2 {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
     }
+
 
     @AfterTest
     public void cleanDriver(){
