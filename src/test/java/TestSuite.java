@@ -11,11 +11,9 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TestSuite {
+
     WebDriver driver;
-    final String LOGIN_FIELD = "standard_user";
-    final String PASSWORD_FIELD = "secret_sauce";
-    final String expectedLink = "https://www.saucedemo.com/inventory.html";
-    final String expectedLinkLogin = "https://www.saucedemo.com/";
+
 
     private final String baseUrl = "https://www.ikea.com/ua/uk/";
 
